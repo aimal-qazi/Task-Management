@@ -1,5 +1,5 @@
 import React from 'react'
-import './../../styles/navbar.css'
+import './../styles/navbar.css'
 import { FaUserCircle } from 'react-icons/fa'
 
 const Navbar = () => {
@@ -10,8 +10,8 @@ const Navbar = () => {
       <div className="user">
         <FaUserCircle className='icon'/>
         <div className='user-info'>
-          <h4>John Doe</h4>
-          <p>john@gmail.com</p>
+          <h4>Qazi</h4>
+          <p>Dummy@gmail.com</p>
         </div>
       </div>
     </div>
