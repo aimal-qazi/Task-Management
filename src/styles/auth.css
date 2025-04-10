@@ -1,98 +1,119 @@
 @import url('./variable.css');
 
 .auth-container {
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    background: #AFDDFF;
+  width: 100%;
+  height: 100vh;
+  background: #f0f4f8;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.auth-container .auth-wrapper {
-    width: 400px;
-    max-height: 400px;
-    margin-top: 50px;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
+.auth-wrapper {
+  width: 400px;
+  background-color: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.5rem;
 }
 
-.auth-container .auth-wrapper .auth-header {
-    padding: 10px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 140px;
+.auth-header {
+  text-align: center;
 }
 
-.auth-container .auth-wrapper .auth-header .icon-box {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: var(--primary-color);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.icon-box {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 1rem;
 }
 
-.auth-container .auth-wrapper .auth-header .icon-box .icon {
-    color: var(--text-color);
-    font-size: 36px;
+.icon {
+  font-size: 32px;
+  color: var(--text-color);
 }
 
-.auth-container .auth-wrapper .auth-form {
-    width: 100%;
-    border-radius: 14px;
-    flex: 1;
-    padding: 35px 20px;
-    display: flex;
-    background: var(--text-color);
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    margin-top: 20px;
+.auth-header h2 {
+  font-size: 24px;
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
 }
 
-.auth-container .auth-wrapper .auth-form .form-group {
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 3px;
+.auth-header p {
+  font-size: 14px;
+  color: #666;
 }
 
-.auth-container .auth-wrapper .auth-form .form-group input {
-    width: 100%;
-    padding: 10px 5px;
-    background: transparent;
-    border: 0;
-    border-bottom: 1px solid;
-    outline: none;
-    font-size: 14px;
-    color: #000;
-    border-color: var(--primary-color);
+.auth-form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
 }
 
-.auth-container .auth-wrapper .auth-form .btn {
-    width: 100%;
-    padding: 12px;
-    background: var(--primary-color);
-    font-size: 16px;
-    color: var(--text-color);
-    font-weight: bold;
-    border: 0;
-    border-radius: 12px;
-    cursor: pointer;
-    margin-top: 15px;
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
 }
 
-.auth-container .auth-wrapper .auth-form .account-verify {
-    font-size: 13px;
+.form-group label {
+  font-size: 14px;
+  color: #333;
 }
 
-.auth-container .auth-wrapper .auth-form .account-verify span {
-    color: var(--primary-color);
-    cursor: pointer;
+.form-group input {
+  padding: 10px 12px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  outline: none;
+  transition: border-color 0.2s ease;
+}
+
+.form-group input:focus {
+  border-color: var(--primary-color);
+  box-shadow: 0 0 0 2px rgba(0, 123, 255, 0.15);
+}
+
+.btn {
+  padding: 12px;
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--text-color);
+  background-color: var(--primary-color);
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #0267d1;
+}
+
+.account-verify {
+  font-size: 13px;
+  color: #444;
+  text-align: center;
+}
+
+.account-verify span {
+  color: var(--primary-color);
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.account-verify span:hover {
+  color: #0267d1;
 }
