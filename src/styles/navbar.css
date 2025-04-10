@@ -1,0 +1,60 @@
+@import url('./variable.css');
+
+.navbar-container {
+    width: 100%;
+    height: 80px;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e0e0e0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 3rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar-container h1 {
+    font-size: 28px;
+    font-weight: 600;
+    color: #333;
+}
+
+.navbar-container .user {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+.navbar-container .user:hover {
+    background-color: #f1f3f5;
+}
+
+.navbar-container .user .icon {
+    font-size: 40px;
+    color: #007bff;
+}
+
+.navbar-container .user .user-info {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+}
+
+.navbar-container .user .user-info h4 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 500;
+    color: #212529;
+}
+
+.navbar-container .user .user-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
