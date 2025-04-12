@@ -5,12 +5,13 @@ import Register from '../pages/Register'
 import Home from '../pages/Home'
 import NotFound from '../pages/NotFound'
 import ProtectedRoute from '../utils/ProtectedRoute'
+import PublicRoute from '../utils/PublicRoute'
 
 const AppRoutes = () => {
   return (
     <Routes>
-        <Route path='login' element={<Login />}></Route>
-        <Route path='register' element={<Register />}></Route>
+        <Route path='login' element={<PublicRoute><Login /></PublicRoute>}></Route>
+        <Route path='register' element={<PublicRoute><Register /></PublicRoute>}></Route>
         <Route element={<ProtectedRoute />}>
           <Route path='/' element={<Home />}></Route>
         </Route>

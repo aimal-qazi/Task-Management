@@ -1,60 +1,71 @@
 @import url('./variable.css');
 
 .navbar-container {
-    width: 100%;
-    height: 80px;
-    background-color: #ffffff;
-    border-bottom: 1px solid #e0e0e0;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 3rem;
-    position: sticky;
-    top: 0;
-    z-index: 100;
+  width: 100%;
+  height: 80px;
+  background-color: var(--background-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 40px;
+  border-bottom: 1px solid #ddd;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
 }
 
 .navbar-container h1 {
-    font-size: 28px;
-    font-weight: 600;
-    color: #333;
+  font-size: 28px;
+  font-weight: 600;
+  color: var(--primary-color-dark);
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+  gap: 20px;
 }
 
 .navbar-container .user {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: background-color 0.2s ease;
-}
-
-.navbar-container .user:hover {
-    background-color: #f1f3f5;
+  display: flex;
+  align-items: center;
+  gap: 12px;
 }
 
 .navbar-container .user .icon {
-    font-size: 40px;
-    color: #007bff;
+  font-size: 40px;
+  color: var(--primary-color-dark);
 }
 
 .navbar-container .user .user-info {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  line-height: 1.2;
 }
 
 .navbar-container .user .user-info h4 {
-    margin: 0;
-    font-size: 16px;
-    font-weight: 500;
-    color: #212529;
+  margin: 0;
+  font-size: 16px;
+  font-weight: 600;
+  color: #333;
 }
 
 .navbar-container .user .user-info p {
-    margin: 0;
-    font-size: 14px;
-    color: #6c757d;
+  margin: 0;
+  font-size: 13px;
+  color: #666;
+}
+
+.logout-btn {
+  padding: 8px 16px;
+  background-color: var(--primary-color);
+  color: var(--text-color);
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background-color 0.3s ease;
+}
+
+.logout-btn:hover {
+  background-color: var(--primary-color-dark);
 }
